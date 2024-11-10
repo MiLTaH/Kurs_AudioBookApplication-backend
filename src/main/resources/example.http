@@ -1,0 +1,26 @@
+### GET all users
+GET http://localhost:8080/Kurs_AudioBookApplication_backend_war_exploded/users
+
+### GET user by id
+GET http://localhost:8080/Kurs_AudioBookApplication_backend_war_exploded/users/1
+
+### Create user
+POST /Kurs_AudioBookApplication_backend_war_exploded/users HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "login": "John",
+  "password": "123456",
+  "email": "john.doe@example.com"
+}
+
+### Update user
+PUT /Kurs_AudioBookApplication_backend_war_exploded/users/1 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "password": "8521581",
+  "email": "john.filroch@example.com"
+}
